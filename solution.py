@@ -10,8 +10,11 @@ class Solution(object):
     3. total cost
     """
 
-    def __init__(self, supplier_for_each_product=[], selected_suppliers=None, cost=np.Inf):
-        self.supplier_for_each_product = supplier_for_each_product
+    def __init__(self, supplier_for_each_product=None, selected_suppliers=None, cost=np.Inf):
+        if supplier_for_each_product is None:
+            self.supplier_for_each_product = []
+        else:
+            self.supplier_for_each_product = supplier_for_each_product
         if selected_suppliers is None:
             self.selected_suppliers = set()
         else:

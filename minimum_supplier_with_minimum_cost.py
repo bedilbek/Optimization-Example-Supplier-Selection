@@ -7,6 +7,7 @@ from optimizer import Optimizer
 from solution_collector import VarArraySolutionCollector
 from solution import Solution
 
+
 class MinimumSupplierWithMinimumCostOptimizer(Optimizer, ABC):
     """Summary of class here.
     This optimizer will find a solution with minimum amount of supplier which has minimum cost.
@@ -118,9 +119,3 @@ class MinimumSupplierWithMinimumCostOptimizer(Optimizer, ABC):
         self._solution = best_solution
 
         return 0
-
-
-
-
-
-

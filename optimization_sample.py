@@ -1,6 +1,7 @@
 from data_simulator import DataSimulator
 from minimum_supplier_with_minimum_cost import MinimumSupplierWithMinimumCostOptimizer
 
+
 def main():
     # create a data simulator
     data_simulator = DataSimulator(num_supplier=50, num_product=2000, probability=0.95, price_lb=1, price_ub=100,

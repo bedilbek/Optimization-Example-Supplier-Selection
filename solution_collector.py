@@ -1,5 +1,5 @@
-from ortools.sat.python import cp_model
 import numpy as np
+from ortools.sat.python import cp_model
 
 
 class VarArraySolutionCollector(cp_model.CpSolverSolutionCallback):

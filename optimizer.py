@@ -1,5 +1,7 @@
-import numpy as np
 from abc import ABC, abstractmethod
+
+import numpy as np
+
 from solution import Solution
 
 
@@ -44,6 +46,7 @@ class Optimizer(ABC):
         """
         define your algorithm here
         """
+
     def solve(self):
         # check if solvable
         if not self.is_solvable():
@@ -53,4 +56,3 @@ class Optimizer(ABC):
         rc = self.solver()
 
         return rc
-
